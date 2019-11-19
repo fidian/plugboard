@@ -1,0 +1,4 @@
+arrowParens: "avoid"
+endOfLine: "lf"
+singleQuote: true
+tabWidth: 4

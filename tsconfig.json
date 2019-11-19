@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "alwaysStrict": true,
+        "esModuleInterop": true,
+        "module": "commonjs",
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "noUnusedLocals": true,
+        "outDir": "./dist",
+        "sourceMap": true,
+        "strict": true,
+        "target": "ES2018"
+    },
+    "include": [
+        "src/**/*"
+    ]
+}

@@ -1,0 +1,19 @@
+#!/usr/bin/env sh
+
+cd "${0%/*}" || {
+    echo "Could not change directory to script location"
+    exit 1
+}
+
+if [ -f ./plugboard.ts ]; then
+    if which ts-node > /dev/null 2>&1; then
+        ts-node -T plugboard.ts
+    elif which npx > /dev/null 2>&1; then
+        npx ts-node -T plugboard.ts
+    else
+        echo "Could not find ts-node."
+        exit 1
+    fi
+else
+    node ./plugboard.js
+fi

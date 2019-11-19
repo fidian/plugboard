@@ -1,0 +1,17 @@
+/dist
+/out-tsc
+/node_modules
+/.idea
+.project
+.classpath
+.c9
+*.launch
+.settings/
+*.sublime-workspace
+*.swp
+.vscode/
+.history/
+npm-debug.log
+yarn-error.log
+.DS_Store
+Thumbs.db

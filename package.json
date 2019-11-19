@@ -1,0 +1,44 @@
+{
+    "name": "plugboard",
+    "version": "0.0.1",
+    "description": "Proxy TCP, SSL, HTTP, HTTPS, or other protocols. Can log data, wrap/unwrap SSL, route traffic, and be reconfigured on the fly. Requests can be routed with attributes. Supports adding/removing CORS, SNI server names, and proxy protocol. Functionality is added via plugins.",
+    "tags": [
+        "proxy",
+        "log",
+        "tcp",
+        "ssl",
+        "https",
+        "http",
+        "sni",
+        "proxy-protocol"
+    ],
+    "bin": {
+        "plugboard": "dist/bin/plugboard.js"
+    },
+    "scripts": {
+        "build": "tsc",
+        "watch": "nodemon -w src -x ts-node -T src/bin/plugboard.ts config.yml"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/fidian/plugboard.git"
+    },
+    "author": "Tyler Akins",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/fidian/plugboard/issues"
+    },
+    "homepage": {
+        "url": "https://github.com/fidian/plugboard$readme"
+    },
+    "dependencies": {
+        "@types/node": "^12.12.9",
+        "neodoc": "^2.0.2",
+        "ts-events": "^3.3.1"
+    },
+    "devDependencies": {
+        "nodemon": "^1.19.4",
+        "ts-node": "^8.5.2",
+        "typescript": "^3.7.2"
+    }
+}
